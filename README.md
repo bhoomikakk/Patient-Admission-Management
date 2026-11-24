@@ -109,8 +109,8 @@ PAMS/
 
 ## 7. Live Links
 
-- **Frontend Live**: *[Insert your live Vercel link]*
-- **Backend Live**: *[Insert your live Render link]*
+- **Frontend Live**:
+- **Backend Live**: 
 
 ---
 
