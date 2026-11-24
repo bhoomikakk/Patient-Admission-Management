@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# SQLite database file (keep or ignore per deployment preference)
+# backend/patients.db
