@@ -113,8 +113,8 @@ PAMS/
 
 ## 7. Live Links
 
-- **Frontend Live**:
-- **Backend Live**: 
+- **Frontend Live**: [https://patient-admission-management-nine.vercel.app](https://patient-admission-management-nine.vercel.app)
+- **Backend Live**: [https://patient-admission-management-i2ln.onrender.com](https://patient-admission-management-i2ln.onrender.com) 
 
 ---
 
