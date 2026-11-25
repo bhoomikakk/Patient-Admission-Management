@@ -101,6 +101,10 @@ PAMS/
 │   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
+├── screenshots/
+│   ├── dashboard.png     # Dashboard & patient records overview
+│   ├── add-patient.png   # Add new patient modal dialog
+│   └── filters.png       # Search & multi-dropdown filters
 ├── .gitignore
 └── README.md
 ```
@@ -116,4 +120,13 @@ PAMS/
 
 ## 8. Screenshots
 
-*(Screenshots of Dashboard, Add Patient Dialog, and Filters)*
+### 1. Dashboard Overview & Patient Table
+![Hospital Dashboard](screenshots/dashboard.png)
+
+### 2. Add New Patient Admission Modal
+![Add Patient Dialog](screenshots/add-patient.png)
+
+### 3. Search & Multi-Filter Controls
+![Filter Options](screenshots/filters.png)
+
+
