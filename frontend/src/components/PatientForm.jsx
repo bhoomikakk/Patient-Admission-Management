@@ -288,7 +288,7 @@ export default function PatientForm({
             {/* 3. Gender */}
             <Box>
               <FormControl fullWidth size="small" error={Boolean(errors.gender)}>
-                <InputLabel id="gender-select-label" shrink>
+                <InputLabel id="gender-select-label" shrink sx={{ pointerEvents: "none" }}>
                   Gender *
                 </InputLabel>
                 <Select
@@ -298,10 +298,18 @@ export default function PatientForm({
                   displayEmpty
                   value={formData.gender}
                   onChange={(e) => handleChange("gender", e.target.value)}
+                  renderValue={(selected) => {
+                    if (!selected) {
+                      return <span style={{ color: "#9CA3AF" }}>Select gender</span>;
+                    }
+                    return selected;
+                  }}
+                  MenuProps={{
+                    PaperProps: {
+                      sx: { maxHeight: 280 },
+                    },
+                  }}
                 >
-                  <MenuItem value="" disabled>
-                    <em>Select gender</em>
-                  </MenuItem>
                   {options.genders.map((g) => (
                     <MenuItem key={g} value={g}>
                       {g}
@@ -315,7 +323,7 @@ export default function PatientForm({
             {/* 4. Ward */}
             <Box>
               <FormControl fullWidth size="small" error={Boolean(errors.ward)}>
-                <InputLabel id="ward-select-label" shrink>
+                <InputLabel id="ward-select-label" shrink sx={{ pointerEvents: "none" }}>
                   Ward *
                 </InputLabel>
                 <Select
@@ -325,10 +333,18 @@ export default function PatientForm({
                   displayEmpty
                   value={formData.ward}
                   onChange={(e) => handleChange("ward", e.target.value)}
+                  renderValue={(selected) => {
+                    if (!selected) {
+                      return <span style={{ color: "#9CA3AF" }}>Select hospital ward</span>;
+                    }
+                    return selected;
+                  }}
+                  MenuProps={{
+                    PaperProps: {
+                      sx: { maxHeight: 280 },
+                    },
+                  }}
                 >
-                  <MenuItem value="" disabled>
-                    <em>Select hospital ward</em>
-                  </MenuItem>
                   {options.wards.map((w) => (
                     <MenuItem key={w} value={w}>
                       {w}
@@ -342,7 +358,7 @@ export default function PatientForm({
             {/* 5. Department */}
             <Box>
               <FormControl fullWidth size="small" error={Boolean(errors.department)}>
-                <InputLabel id="dept-select-label" shrink>
+                <InputLabel id="dept-select-label" shrink sx={{ pointerEvents: "none" }}>
                   Department *
                 </InputLabel>
                 <Select
@@ -352,10 +368,18 @@ export default function PatientForm({
                   displayEmpty
                   value={formData.department}
                   onChange={(e) => handleChange("department", e.target.value)}
+                  renderValue={(selected) => {
+                    if (!selected) {
+                      return <span style={{ color: "#9CA3AF" }}>Select department</span>;
+                    }
+                    return selected;
+                  }}
+                  MenuProps={{
+                    PaperProps: {
+                      sx: { maxHeight: 280 },
+                    },
+                  }}
                 >
-                  <MenuItem value="" disabled>
-                    <em>Select department</em>
-                  </MenuItem>
                   {options.departments.map((d) => (
                     <MenuItem key={d} value={d}>
                       {d}
@@ -369,7 +393,7 @@ export default function PatientForm({
             {/* 6. Doctor */}
             <Box>
               <FormControl fullWidth size="small" error={Boolean(errors.doctor)}>
-                <InputLabel id="doctor-select-label" shrink>
+                <InputLabel id="doctor-select-label" shrink sx={{ pointerEvents: "none" }}>
                   Doctor *
                 </InputLabel>
                 <Select
@@ -379,10 +403,18 @@ export default function PatientForm({
                   displayEmpty
                   value={formData.doctor}
                   onChange={(e) => handleChange("doctor", e.target.value)}
+                  renderValue={(selected) => {
+                    if (!selected) {
+                      return <span style={{ color: "#9CA3AF" }}>Select assigned doctor</span>;
+                    }
+                    return selected;
+                  }}
+                  MenuProps={{
+                    PaperProps: {
+                      sx: { maxHeight: 280 },
+                    },
+                  }}
                 >
-                  <MenuItem value="" disabled>
-                    <em>Select assigned doctor</em>
-                  </MenuItem>
                   {options.doctors.map((doc) => (
                     <MenuItem key={doc} value={doc}>
                       {doc}

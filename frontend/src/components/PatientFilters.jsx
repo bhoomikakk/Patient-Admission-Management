@@ -77,7 +77,7 @@ export default function PatientFilters({
         {/* Ward Filter */}
         <Box>
           <FormControl fullWidth size="small">
-            <InputLabel shrink id="ward-filter-label">
+            <InputLabel shrink id="ward-filter-label" sx={{ pointerEvents: "none" }}>
               Ward
             </InputLabel>
             <Select
@@ -87,6 +87,11 @@ export default function PatientFilters({
               onChange={(e) => onWardChange(e.target.value)}
               displayEmpty
               notched
+              MenuProps={{
+                PaperProps: {
+                  sx: { maxHeight: 280 },
+                },
+              }}
               sx={{
                 backgroundColor: "#FAFAFA",
                 "& .MuiOutlinedInput-notchedOutline": { borderColor: "#E5E7EB" },
@@ -107,7 +112,7 @@ export default function PatientFilters({
         {/* Department Filter */}
         <Box>
           <FormControl fullWidth size="small">
-            <InputLabel shrink id="dept-filter-label">
+            <InputLabel shrink id="dept-filter-label" sx={{ pointerEvents: "none" }}>
               Department
             </InputLabel>
             <Select
@@ -117,6 +122,11 @@ export default function PatientFilters({
               onChange={(e) => onDeptChange(e.target.value)}
               displayEmpty
               notched
+              MenuProps={{
+                PaperProps: {
+                  sx: { maxHeight: 280 },
+                },
+              }}
               sx={{
                 backgroundColor: "#FAFAFA",
                 "& .MuiOutlinedInput-notchedOutline": { borderColor: "#E5E7EB" },
@@ -137,7 +147,7 @@ export default function PatientFilters({
         {/* Doctor Filter */}
         <Box>
           <FormControl fullWidth size="small">
-            <InputLabel shrink id="doctor-filter-label">
+            <InputLabel shrink id="doctor-filter-label" sx={{ pointerEvents: "none" }}>
               Doctor
             </InputLabel>
             <Select
@@ -147,6 +157,11 @@ export default function PatientFilters({
               onChange={(e) => onDoctorChange(e.target.value)}
               displayEmpty
               notched
+              MenuProps={{
+                PaperProps: {
+                  sx: { maxHeight: 280 },
+                },
+              }}
               sx={{
                 backgroundColor: "#FAFAFA",
                 "& .MuiOutlinedInput-notchedOutline": { borderColor: "#E5E7EB" },
